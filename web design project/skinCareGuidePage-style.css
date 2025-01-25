@@ -1,0 +1,178 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #ECE4DE;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 5px 10px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+}
+
+nav a:hover {
+    background-color: #98938D;
+    color: white;
+}
+
+nav a.active {
+    background-color: #545450;
+    color: white;
+}
+.icons img {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Main content styles */
+main {
+    padding: 50px;
+    background-color: white;
+}
+
+/* Routine section */
+.routine-section {
+    margin-bottom: 80px;
+}
+
+.routine-section h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.routine-steps {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #ECE4DE;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.step-image {
+    flex: 0 0 200px;
+    margin-right: 30px;
+}
+
+.step-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.step-content h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Ingredients section */
+.ingredients-section {
+    margin-bottom: 80px;
+}
+
+.ingredients-section h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ingredient-card {
+    background-color: #ECE4DE;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.ingredient-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.ingredient-card h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #ECE4DE;
+    padding: 50px;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.link-column h4 {
+    font-family: 'Bodoni Moda', serif;
+    margin-bottom: 15px;
+}
+
+.link-column a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}

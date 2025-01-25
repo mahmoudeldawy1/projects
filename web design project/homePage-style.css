@@ -1,0 +1,225 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Header styles */
+header {
+    background-color: #ECE4DE;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+nav a:hover {
+    background-color: #98938D;
+    color: white;
+}
+
+nav a.active {
+    background-color: #545450;
+    color: white;
+}
+
+.icons img {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Carousel styles */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+.carousel {
+    position: relative;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.carousel-content h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.collections-btn {
+    background-color: #545450;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.collections-btn:hover {
+    background-color: #98938D;
+}
+
+.carousel-arrows {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.arrow {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Best sellers section */
+.best-sellers {
+    padding: 50px;
+    background-color: #ECE4DE;
+}
+
+.best-sellers h2 {
+    font-family: 'Bodoni Moda', serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    text-align: center;
+    width: 300px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.2em;
+}
+
+/* Reviews section */
+.reviews {
+    padding: 50px;
+}
+
+.reviews h2 {
+    font-family: 'Bodoni Moda', serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.review-grid {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review-card {
+    width: 45%;
+    text-align: center;
+    padding: 20px;
+    background-color: #ECE4DE;
+    border-radius: 10px;
+}
+
+.review-card img {
+    margin-bottom: 15px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #ECE4DE;
+    padding: 0px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around; 
+    max-width: 1200px;
+    margin: 10px auto 0;
+}
+
+.link-column h4 {
+    font-family: 'Bodoni Moda', serif;
+    margin-bottom: 15px;
+}
+
+.link-column a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-logo {
+padding: 10;
+    display: flex;
+   
+    
+}

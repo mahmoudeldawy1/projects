@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenova - Home</title>
+    <link rel="stylesheet" href="homePage-style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Serenova Logo" width="50" height="50">
+        </div>
+        <nav>
+            <a href="#" class="active">HOME</a>
+            <a href="aboutPage.html">ABOUT</a>
+            <a href="shopNowPage.html">SHOP NOW</a>
+            <a href="skinCareGuidePage.html">SKINCARE GUIDE</a>
+            <a href="contactsPage.html">CONTACTS</a>
+        </nav>
+        <div class="icons">
+            <img src="images/search.png" alt="Search" width="24" height="24">
+            <img src="images/shopping cart.png" alt="Cart" width="24" height="24">
+        </div>
+    </header>
+
+    <main>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <img src="images/carousel 1.png" alt="Clean Beauty" width="1200" height="600">
+                    <div class="carousel-content">
+                        <h1>"Glow Naturally with Clean Beauty."</h1>
+                        <p>Experience clean, safe skincare made with love and natural ingredients.</p>
+                        <p>A journey to radiant skin and mindful selfcare.</p>
+                        <button class="collections-btn">COLLECTIONS</button>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/carousel 2.jpg" alt="Natural Beauty" width="1200" height="600">
+                    <div class="carousel-content">
+                        <h1>"Natural Beauty Begins Here."</h1>
+                        <p>Discover skincare that nurtures and protects.</p>
+                        <p>Your journey to natural radiance starts now.</p>
+                        <button class="collections-btn">COLLECTIONS</button>
+                    </div>
+                </div>
+                <div class="carousel-arrows">
+                    <span class="arrow left">&#8592;</span>
+                    <span class="arrow right">&#8594;</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="best-sellers">
+            <h2>Most loved, best sellers</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/hydrating facial cleanser.jpg" alt="Hydrating Facial Cleanser" width="300" height="300">
+                    <h3>Hydrating Facial Cleanser</h3>
+                </div>
+                <div class="product-card">
+                    <img src="images/soothing gel.jpg" alt="Soothing Gel Moisturizer" width="300" height="300">
+                    <h3>Soothing Gel Moisturizer</h3>
+                </div>
+                <div class="product-card">
+                    <img src="images/hyalauronic acid.jpg" alt="Hyaluronic Acid" width="300" height="300">
+                    <h3>Hyaluronic Acid</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <img src="images/profile.png" alt="User" width="60" height="60">
+                    <p>This cleanser is a game-changer! It leaves my skin feeling fresh and soft without any dryness. Perfect for my sensitive skin —highly recommend!</p>
+                </div>
+                <div class="review-card">
+                    <img src="images/profile.png" alt="User" width="60" height="60">
+                    <p>I've been using the moisturizer for two weeks, and my skin looks so much healthier. It's lightweight but super hydrating —definitely my new go-to!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo.jpg" alt="Serenova Logo" width="240" height="240">
+        </div>
+        <div class="footer-links">
+            <div class="link-column">
+                <h4>Quick Links</h4>
+                <a href="#">Products</a>
+                <a href="#">Our Story</a>
+                <a href="#">Your Routine</a>
+            </div>
+            <div class="link-column">
+                <h4>Services</h4>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+                <a href="#">Email</a>
+            </div>
+            <div class="link-column">
+                <h4>Socials</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook.png" alt="Facebook" width="24" height="24"></a>
+                    <a href="#"><img src="images/instgram.png" alt="Instagram" width="24" height="24"></a>
+                    <a href="#"><img src="images/whatsapp.png" alt="WhatsApp" width="24" height="24"></a>
+                    <a href="#"><img src="images/tiktok.png" alt="TikTok" width="24" height="24"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Carousel hover functionality
+        const carousel = document.querySelector('.carousel');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const arrows = document.querySelectorAll('.arrow');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+
+        arrows.forEach(arrow => {
+            arrow.addEventListener('click', (e) => {
+                if (e.target.classList.contains('left')) {
+                    currentSlide = currentSlide === 0 ? slides.length - 1 : currentSlide - 1;
+                } else {
+                    currentSlide = currentSlide === slides.length - 1 ? 0 : currentSlide + 1;
+                }
+                showSlide(currentSlide);
+            });
+        });
+    </script>
+</body>
+</html>

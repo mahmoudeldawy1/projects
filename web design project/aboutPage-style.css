@@ -1,0 +1,212 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #FFFFFF;
+}
+
+/* Header styles */
+header {
+    background-color: #ECE4DE;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 5px 10px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+}
+
+nav a:hover {
+    background-color: #98938D;
+    color: white;
+}
+
+nav a.active {
+    background-color: #545450;
+    color: white;
+}
+
+.icons img {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* About Hero Section */
+.about-hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #FFFFFF;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.about-content h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.brand-name {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 600;
+}
+
+.hero-images {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+}
+
+.hero-img-1, .hero-img-2 {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+}
+
+/* Philosophy and Promise Section */
+.philosophy-promise {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #ECE4DE;
+}
+
+.philosophy, .promise {
+    flex: 1;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.philosophy h2, .promise h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.philosophy p, .promise p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.philosophy img {
+    margin-top: 30px;
+    border-radius: 50%;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    
+}
+
+/* Why Choose Us Section */
+.why-choose {
+    padding: 50px;
+    text-align: center;
+}
+
+.why-choose h2 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.choose-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefits {
+    flex: 1;
+    text-align: left;
+    padding-right: 50px;
+}
+
+.benefits h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.benefits p {
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.pearl-image {
+    flex: 1;
+}
+
+.pearl-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #ECE4DE;
+    padding: 50px;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.link-column h4 {
+    font-family: 'Bodoni Moda', serif;
+    margin-bottom: 15px;
+}
+
+.link-column a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
